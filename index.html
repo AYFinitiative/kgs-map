@@ -3,6 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random PDF Page Redirect</title>
+</head>
+<body>
+    <h1>Redirecting to a Random Page...</h1>
+
+    <script>
+        // Total number of pages in the PDF
+        const totalPages = 1683; // Replace with the actual number of pages in your PDF
+
+        // Generate a random page number
+        const randomPage = Math.floor(Math.random() * totalPages) + 1;
+
+        // URL to the PDF file on Google Drive or any cloud storage
+        const pdfUrl = 'https://drive.google.com/uc?id=1l3XSZvVOjc1btJeRWvjqSEDkQzQ1qtqd&export=download'; // Replace with your PDF URL
+
+        // Redirect to the random page in the PDF
+        window.location.href = `${pdfUrl}#page=${randomPage}`;
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random PDF Page</title>
 </head>
 <body>
